@@ -7,7 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule,Routes } from '@angular/router';
 import { NoticiasComponent } from './components/noticias/noticias.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LateralhomeComponent } from './components/lateralhome/lateralhome.component'
 
 
 const routes: Routes = [
@@ -22,10 +23,12 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    LateralhomeComponent
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
